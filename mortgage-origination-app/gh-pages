@@ -1,0 +1,10 @@
+# Create a `gh-pages` branch in the repository
+git checkout --orphan gh-pages
+
+# Push the production build files to the `gh-pages` branch
+git add -f build
+git commit -m "Initial gh-pages commit"
+git push origin gh-pages
+
+# Go to the repository settings on GitHub and select the `gh-pages` branch as the source for GitHub Pages
+# Save the settings to publish the application through GitHub Pages
